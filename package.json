@@ -1,0 +1,27 @@
+{
+  "name": "scheduler-app",
+  "version": "1.0.0",
+  "description": "\"# cron-scheduler\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyam9493/cron-scheduler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shyam9493/cron-scheduler/issues"
+  },
+  "homepage": "https://github.com/shyam9493/cron-scheduler#readme",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1",
+    "node-cron": "^4.2.1"
+  }
+}
