@@ -263,9 +263,9 @@ app.get("/", (req, res) => {
                   .map(
                     (e, i) =>
                       `<li>
-                        <span class="endpoint-url">\${e}</span>
+                        <span class="endpoint-url">${e}</span>
                         <form method="POST" action="/delete" style="display: inline;">
-                          <input type="hidden" name="index" value="\${i}" />
+                          <input type="hidden" name="index" value="${i}" />
                           <button type="submit" class="btn-delete">Delete</button>
                         </form>
                       </li>`
@@ -333,7 +333,7 @@ app.post("/run", async (req, res) => {
         <h2>⚡ Execution Results</h2>
         ${results.map(r => `
           <p class="\${r.status === 'success' ? 'success' : 'failed'}">
-            ${r.status === 'success' ? '✅' : '❌'} \${r.url} 
+            ${r.status === 'success' ? '✅' : '❌'} ${r.url} 
             ${r.status === 'success' ? '| ' + r.code : '| ' + r.error}
           </p>
         `).join('')}
